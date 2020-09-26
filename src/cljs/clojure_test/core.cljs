@@ -7,6 +7,21 @@
    [clerk.core :as clerk]
    [accountant.core :as accountant]))
 
+;; Rekurzija
+(defn rekurzija []
+  (loop [i 0]
+    (when (< i 5)
+      (println i)
+      (recur (inc i)))))
+(rekurzija)
+
+;; igranje sa listom
+(def Lista '(1 2 3 4 5))
+(println Lista)
+(cons "first" Lista) ; dodaj "first" na pocetak liste
+(println Lista)
+(println (rest Lista)) ; println sve osim prvog elementa
+
 
 ;; niz se kreira sa []
 
