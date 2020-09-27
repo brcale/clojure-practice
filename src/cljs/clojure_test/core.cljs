@@ -7,6 +7,7 @@
    [clerk.core :as clerk]
    [accountant.core :as accountant]))
 
+(println "pocetak")
 ;;bubble sort
 (defn- bubble [ys x]
   (if-let [y (peek ys)]
@@ -21,7 +22,7 @@
       xs
       (recur ys))))
 
-(println(bubble-sort [3 2 5 7 1])) ; [1 2 3]
+(println(bubble-sort [3 2 5 7 1]))
 
 ;; Rekurzija
 (defn rekurzija []
@@ -44,7 +45,7 @@
 (def niz-brojeva [1 2 3 4 5])
 
 (println "Niz brojeva " niz-brojeva)
-
+(println (pop niz-brojeva)) ;pop kod nizova mice zadnji element, a kod liste prvi
 
 (def niz-stringova ["1" "2" "3" "cetiri" "pet"])
 
