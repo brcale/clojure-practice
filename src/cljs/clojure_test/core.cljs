@@ -6,6 +6,7 @@
    [reitit.frontend :as reitit]
    [clerk.core :as clerk]
    [accountant.core :as accountant]))
+
 ;;bubble sort
 (defn- bubble [ys x]
   (if-let [y (peek ys)]
@@ -20,7 +21,7 @@
       xs
       (recur ys))))
 
-(println((bubble-sort [3 2 1]))) ; [1 2 3]
+(println(bubble-sort [3 2 5 7 1])) ; [1 2 3]
 
 ;; Rekurzija
 (defn rekurzija []
