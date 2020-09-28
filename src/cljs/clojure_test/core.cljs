@@ -8,6 +8,17 @@
    [accountant.core :as accountant]))
 
 (println "pocetak")
+;;parametri
+(defn greet [name value]
+  (println "Hello", name, value)
+  )
+(greet "students" 120)
+
+(defn Add [x y]
+  (println (+ x y))
+  )
+(Add 5 3)
+
 ;;bubble sort
 (defn- bubble [ys x]
   (if-let [y (peek ys)]
@@ -90,11 +101,11 @@
 (defn fun-let-usage []
 (let [varijabla "vrijednost dostupna samo unutar funkcije"
       varijabla-2 [1 2 3 4]]
-(println varijabla)))
+(println varijabla varijabla-2)))
 
 (fun-let-usage)
 
-;; 3 vrste funkcija:::: sa imenom (defn name-of-fun []...) i anonimne: (fn [ele] (println "Argument fun je " ele)) ili #(println "Argument fun je " %)
+;; 3 vrste funkcija: sa imenom (defn name-of-fun []...) i anonimne: (fn [ele] (println "Argument fun je " ele)) ili #(println "Argument fun je " %)
 ;;POVRATNA VRIJEDNSOT FUNKCIJE JE ZADNJA NAREDBA U FUNKCIJI
 
 (defn asd []
